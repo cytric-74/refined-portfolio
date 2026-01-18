@@ -7,26 +7,26 @@ import { motion, useMotionValue, useSpring } from "framer-motion"
 
 const projects = [
   {
-    title: "Neural Interface",
-    tags: ["Next.js", "OpenAI", "WebGL"],
+    title: "Feel cv",
+    tags: ["Python", "OpenAI", "LangChain"],
     image: "/abstract-neural-network-visualization-dark-theme.jpg",
     year: "2024",
   },
   {
-    title: "Quantum Dashboard",
+    title: "Audio Sentimental prediction",
     tags: ["React", "D3.js", "Python"],
     image: "/futuristic-data-dashboard-dark-minimal.jpg",
     year: "2024",
   },
   {
-    title: "Synthetic Memory",
-    tags: ["TypeScript", "LangChain", "Vector DB"],
+    title: "GTA6 sale prediction",
+    tags: ["Python", "Tableau", "spaCy", "ARIMA"],
     image: "/abstract-memory-storage-visualization.jpg",
     year: "2023",
   },
   {
-    title: "Echo Protocol",
-    tags: ["Rust", "WebAssembly", "Audio"],
+    title: "Stock Market prediction",
+    tags: ["Tableau", "Github Action", "Docker", "TensorFlow", "Postgre SQL"],
     image: "/sound-wave-visualization-dark-theme.jpg",
     year: "2023",
   },
