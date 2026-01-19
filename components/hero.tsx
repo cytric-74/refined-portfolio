@@ -29,11 +29,11 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
         >
-          <p className="font-mono text-xs tracking-[0.3em] text-muted-foreground mb-2">01 — DISCIPLINE</p>
+          <p className="font-mono text-xs tracking-[0.3em] text-muted-foreground mb-2">ROHAN SHARMA</p>
           <h2 className="font-sans text-4xl md:text-6xl lg:text-7xl font-light tracking-tight text-balance">
-            SYSTEM
+            DATA
             <br />
-            <span className="italic">ARCHITECT</span>
+            <span className="italic">ANALYST</span>
           </h2>
         </motion.div>
 
@@ -62,7 +62,7 @@ export function Hero() {
           transition={{ duration: 1, delay: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
           className="self-end text-right"
         >
-          <p className="font-mono text-xs tracking-[0.3em] text-muted-foreground mb-2">02 — CRAFT</p>
+          <p className="font-mono text-xs tracking-[0.3em] text-muted-foreground mb-2">01 — CRAFT</p>
           <h2 className="font-sans text-4xl md:text-6xl lg:text-7xl font-light tracking-tight text-balance">
             INTERFACE
             <br />

@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "AI-Native Product Builder | Portfolio",
-  description: "System Architect & Interface Designer crafting intelligent digital experiences",
+  title: "rohh | Portfolio",
+  description: "Data Analyst finding patterns in the chaos.",
 }
 
 export const viewport: Viewport = {
