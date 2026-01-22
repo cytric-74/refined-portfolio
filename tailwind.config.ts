@@ -8,12 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--font-playfair)", "serif"],
+        mono: ["var(--font-geist-mono)", "monospace"],
+      },
       colors: {
-        border: "var(--border)",
         background: "var(--background)",
         foreground: "var(--foreground)",
+        border: "var(--border)",
         ring: "var(--ring)",
-        accent: "var(--accent)",
       },
     },
   },
