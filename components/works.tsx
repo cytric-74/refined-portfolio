@@ -26,7 +26,7 @@ const projects = [
   },
   {
     title: "Stock Market prediction",
-    tags: ["Tableau", "Github Action", "Docker", "TensorFlow", "Postgre SQL"],
+    tags: ["Tableau", "Docker", "TensorFlow", "Postgre SQL"],
     image: "/sound-wave-visualization-dark-theme.jpg",
     year: "2023",
   },

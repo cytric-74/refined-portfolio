@@ -4,6 +4,25 @@ import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import { ArrowUpRight } from "lucide-react"
 
+const socialLinks = [
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/roh28j",
+  },
+  {
+    label: "GitHub",
+    href: "https://github.com/cytric-74",
+  },
+  {
+    label: "Twitter",
+    href: "https://twitter.com/roh28j",
+  },
+  {
+    label: "Discord",
+    href: "https://discord.gg/cytrc",
+  },
+]
+
 export function Footer() {
   const [time, setTime] = useState("")
   const [isHovered, setIsHovered] = useState(false)
@@ -42,13 +61,11 @@ export function Footer() {
         />
 
         {/* Content */}
-        <div className="relative py-16 md:py-24 px-8 md:px-12 border-t border-white/10">
+        <div className="relative py-12 md:py-16 px-8 md:px-12 border-t border-white/10">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <motion.h2
               className="font-sans text-4xl md:text-6xl lg:text-8xl font-light tracking-tight text-center md:text-left"
-              animate={{
-                color: isHovered ? "#050505" : "#fafafa",
-              }}
+              animate={{ color: isHovered ? "#050505" : "#fafafa" }}
               transition={{ duration: 0.3 }}
             >
               Let's <span className="italic">Collaborate</span>
@@ -68,7 +85,7 @@ export function Footer() {
       </motion.a>
 
       {/* Footer Info */}
-      <div className="px-8 md:px-12 py-8 border-t border-white/10">
+      <div className="px-8 md:px-12 py-12 md:py-16 border-t border-white/10">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           {/* Local Time */}
           <div className="font-mono text-xs tracking-widest text-muted-foreground">
@@ -78,20 +95,24 @@ export function Footer() {
 
           {/* Links */}
           <div className="flex gap-8">
-            {["LinkedIn", "GitHub", "Twitter"].map((link) => (
+            {socialLinks.map((link) => (
               <a
-                key={link}
-                href="#"
+                key={link.label}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 data-cursor-hover
-                className="font-mono text-xs tracking-widest text-muted-foreground hover:text-white transition-colors duration-300"
+                className="font-mono text-sm tracking-[0.35em] text-muted-foreground hover:text-white transition-colors duration-300"
               >
-                {link}
+                {link.label}
               </a>
             ))}
           </div>
 
           {/* Copyright */}
-          <p className="font-mono text-xs tracking-widest text-muted-foreground">© {new Date().getFullYear()}</p>
+          <p className="font-mono text-xs tracking-widest text-muted-foreground">
+            © {new Date().getFullYear()}
+          </p>
         </div>
       </div>
     </footer>
