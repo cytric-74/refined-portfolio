@@ -3,23 +3,23 @@
 import { motion } from "framer-motion"
 
 const techItems = [
-  "NEXT.JS",
-  "REACT",
-  "TYPESCRIPT",
   "PYTHON",
+  "MYSQL",
+  "TYPESCRIPT",
   "PYTORCH",
+  "POWERBI",
   "LATENCY",
-  "INTUITION",
+  "TABLEAU",
   "OPENAI",
-  "EMPATHY",
+  "JAVASCRIPT",
   "WEBGL",
   "NODE.JS",
   "PRECISION",
 ]
 
 const concepts = [
+  "SYSTEM",
   "ARCHITECTURE",
-  "SYSTEMS",
   "INTERFACES",
   "ALGORITHMS",
   "EMERGENCE",
