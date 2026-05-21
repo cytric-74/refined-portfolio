@@ -42,7 +42,7 @@ export function Footer() {
   }, [])
 
   return (
-    <footer className="relative">
+    <footer id="footer" className="relative">
       {/* Main CTA */}
       <motion.a
         href="mailto:workatrohh@gmail.com"

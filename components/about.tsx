@@ -4,11 +4,10 @@ import { useRef } from "react"
 import { motion, useScroll, useTransform, useSpring } from "framer-motion"
 
 const statements = [
-  "Clarity comes from careful analysis.",
-  "Design systems that adapt and evolve.",
-  "Interfaces should feel inevitable.",
-  "Every interaction is a conversation.",
-  "Analysis is just structured curiosity.",
+  "Hi! Im Rohan.",
+  "dta analyst & developer",
+  "I build with logic, aesthetics, and intent.",
+  "Every interaction is a conversation.",,
 ]
 
 export function About() {
@@ -22,7 +21,7 @@ export function About() {
   const smoothX = useSpring(x, { stiffness: 100, damping: 30 })
 
   return (
-    <section ref={containerRef} className="relative py-32 overflow-hidden md:py-0">
+    <section id="about" ref={containerRef} className="relative py-32 overflow-hidden md:py-0">
       {/* Section Header */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -31,7 +30,7 @@ export function About() {
         transition={{ duration: 0.8 }}
         className="px-8 md:px-12 mb-0 py-20"
       >
-        <p className="font-mono text-xs tracking-[0.3em] text-muted-foreground mb-4">02 — PHILOSOPHY</p>
+        <p className="font-mono text-xs tracking-[0.3em] text-muted-foreground mb-4">02 — TRYING TO KNOW ME?</p>
         <h2 className="font-sans text-3xl md:text-5xl font-light italic">Stream of Consciousness</h2>
       </motion.div>
 
