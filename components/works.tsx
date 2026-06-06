@@ -43,7 +43,7 @@ export function Works() {
         transition={{ duration: 0.8 }}
         className="mb-24"
       >
-        <p className="font-mono text-xs tracking-[0.3em] text-muted-foreground mb-4">
+        <p className="font-mono text-sm tracking-[0.3em] text-muted-foreground mb-4">
           03 — SELECTED WORKS
         </p>
 

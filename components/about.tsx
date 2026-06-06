@@ -1,53 +1,59 @@
 "use client"
 
-import { useRef } from "react"
-import { motion, useScroll, useTransform, useSpring } from "framer-motion"
+import { motion } from "framer-motion"
 
 const statements = [
-  "Hi! Im Rohan.",
-  "dta analyst & developer",
+  "Hi! I'm Rohan.",
+  "Data Analyst and Developer",
   "I build with logic, aesthetics, and intent.",
-  "Every interaction is a conversation.",,
+  "Every interaction is a conversation.",
 ]
 
 export function About() {
-  const containerRef = useRef<HTMLElement>(null)
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start end", "end start"],
-  })
-
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-100%"])
-  const smoothX = useSpring(x, { stiffness: 100, damping: 30 })
+  const duplicatedStatements = [...statements, ...statements, ...statements]
 
   return (
-    <section id="about" ref={containerRef} className="relative py-32 overflow-hidden md:py-0">
+    <section id="about" className="relative pt-16 pb-8 overflow-hidden">
       {/* Section Header */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className="px-8 md:px-12 mb-0 py-20"
+        className="px-8 md:px-12 mb-12"
       >
-        <p className="font-mono text-xs tracking-[0.3em] text-muted-foreground mb-4">02 — TRYING TO KNOW ME?</p>
-        <h2 className="font-sans text-3xl md:text-5xl font-light italic">Stream of Consciousness</h2>
+        <p className="font-mono text-sm tracking-[0.3em] text-muted-foreground mb-4">
+          02 — TRYING TO KNOW ME?
+        </p>
+
+        <h2 className="font-sans text-3xl md:text-5xl font-light italic">
+          Stream of Consciousness
+        </h2>
       </motion.div>
 
-      {/* Horizontal Scroll Container */}
-      <div className="relative flex items-center overflow-hidden py-0 gap-0 h-16">
-        <motion.div style={{ x: smoothX }} className="flex gap-16 md:gap-24 px-8 md:px-12 whitespace-nowrap">
-          {statements.map((statement, index) => (
-            <motion.p
+      {/* Marquee */}
+      <div className="overflow-hidden py-6">
+        <motion.div
+          className="flex gap-8 animate-marquee-left whitespace-nowrap"
+          style={{ width: "fit-content" }}
+        >
+          {duplicatedStatements.map((statement, index) => (
+            <span
               key={index}
-              className="text-4xl md:text-6xl lg:text-7xl font-sans font-light tracking-tight text-white/90"
-              style={{
-                WebkitTextStroke: index % 2 === 0 ? "none" : "1px rgba(255,255,255,0.3)",
-                color: index % 2 === 0 ? "inherit" : "transparent",
-              }}
+              className="
+                text-xl
+                md:text-3xl
+                lg:text-4xl
+                font-light
+                text-white/70
+                hover:text-white
+                transition-colors
+                duration-300
+              "
             >
               {statement}
-            </motion.p>
+              <span className="mx-8 text-white/20">•</span>
+            </span>
           ))}
         </motion.div>
       </div>
@@ -57,8 +63,8 @@ export function About() {
         initial={{ scaleX: 0 }}
         whileInView={{ scaleX: 1 }}
         viewport={{ once: true }}
-        transition={{ duration: 1.5, ease: [0.25, 0.46, 0.45, 0.94] }}
-        className="mt-16 mx-8 md:mx-12 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent origin-left"
+        transition={{ duration: 1.5 }}
+        className="mt-8 mx-8 md:mx-12 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent origin-left"
       />
     </section>
   )
