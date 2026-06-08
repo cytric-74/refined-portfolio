@@ -47,7 +47,7 @@ export function Works() {
           03 — SELECTED WORKS
         </p>
 
-        <h2 className="font-sans text-3xl md:text-5xl font-light italic">
+        <h2 className="font-sans text-3xl md:text-5xl font-light italic text-blue-200">
           The Distortion Gallery
         </h2>
       </motion.div>

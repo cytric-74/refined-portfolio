@@ -41,9 +41,9 @@ export function About() {
             <span
               key={index}
               className="
-                text-xl
-                md:text-3xl
-                lg:text-4xl
+                text-2xl
+                md:text-4xl
+                lg:text-6xl
                 font-light
                 text-white/70
                 hover:text-white
