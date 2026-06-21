@@ -5,28 +5,28 @@ import { motion } from "framer-motion"
 
 const projects = [
   {
+    title: "Northstar - KPI intelligence",
+    tags: ["Python", "PowerBI", "SQL", "StreamLit"],
+    year: "2026",
+    href: "https://github.com/cytric-74/",
+  },
+  {
+    title: "PINNs for FLuid Dynamics",
+    tags: ["Python", "Pytorch", "PINNs"],
+    year: "2026",
+    href: "https://github.com/cytric-74/PINNs-for-turbulance-simulation",
+  },
+  {
     title: "Feel CV",
-    tags: ["Python", "OpenAI", "LangChain"],
-    year: "2024",
+    tags: ["Javascript", "CSS", "Langchain"],
+    year: "2025",
     href: "https://github.com/cytric-74/feel-cv",
   },
   {
-    title: "Audio Sentimental Prediction",
-    tags: ["React", "D3.js", "Python"],
-    year: "2024",
-    href: "https://github.com/cytric-74/audio-sentiment",
-  },
-  {
-    title: "GTA6 Sale Prediction",
-    tags: ["Python", "Tableau", "spaCy", "ARIMA"],
+    title: "Blue Qants",
+    tags: ["PowerBI", "cPython", "Django", "SQLlite"],
     year: "2023",
-    href: "https://github.com/cytric-74/gta6-sale-prediction",
-  },
-  {
-    title: "Stock Market Prediction",
-    tags: ["Tableau", "Docker", "TensorFlow", "PostgreSQL"],
-    year: "2023",
-    href: "https://github.com/cytric-74/stock-market-prediction",
+    href: "https://github.com/cytric-74/Blue_Quants",
   },
 ]
 
