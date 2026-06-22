@@ -15,13 +15,13 @@ const techItems = [
 ]
 
 const concepts = [
-  "DATA ANALYSIS",
+  "DATA ANALYTICS",
   "MACHINE LEARNING",
   "NLP LLMs",
-  "GEN AI",
-  "CONVERGENCE",
+  "DATA ORCHESTRATION",
+  "CFD",
   "DATA STRUCTURES",
-  "RESNET",
+  "SYSTEM ARCHITECTURE",
   "NEURAL NETWORKS",
   "ENTROPY",
   "SYSTEM PIPELINE",

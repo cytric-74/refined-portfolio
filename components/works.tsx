@@ -5,8 +5,8 @@ import { motion } from "framer-motion"
 
 const projects = [
   {
-    title: "Northstar",
-    tags: ["Python", "PowerBI", "SQL", "StreamLit"],
+    title: "Northstar ~ KPI intelligence",
+    tags: ["Python", "Tableau", "SQL", "StreamLit"],
     year: "2026",
     href: "https://github.com/cytric-74/northstar",
   },
@@ -17,17 +17,23 @@ const projects = [
     href: "https://github.com/cytric-74/PINNs-for-turbulance-simulation",
   },
   {
-    title: "Feel CV",
+    title: "Feel CV - resume parser",
     tags: ["Javascript", "CSS", "Langchain"],
     year: "2025",
     href: "https://github.com/cytric-74/feel-cv",
   },
   {
-    title: "Blue Qants",
+    title: "Blue Qants analytics",
     tags: ["PowerBI", "cPython", "Django", "SQLlite"],
     year: "2023",
     href: "https://github.com/cytric-74/Blue_Quants",
   },
+  {
+    title: "inkGuard - signature forgery",
+    tags : ["VAE", "Siamese", "ML", "Image Processing"],
+    year: "2026",
+    href: "https://github.com/cytric-74/inkGuard"
+  }
 ]
 
 export function Works() {
